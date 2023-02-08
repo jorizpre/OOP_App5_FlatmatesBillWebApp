@@ -1,0 +1,15 @@
+certifi
+chardet
+click
+filestack-python
+Flask
+fpdf
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+trafaret
+urllib3
+Werkzeug
+WTForms
