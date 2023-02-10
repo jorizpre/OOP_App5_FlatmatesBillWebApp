@@ -8,11 +8,19 @@
 <body>
 <h2>The Bill Form</h2>
 <p>Fill in the form and click the button to get the results</p>
-<form action="/results" method="post">
-    {{billform.amount.label}} {{billform.amount}}
-    <br>
+<form action="/results" method="post"> <!-- When form is submitted, perform the action of going to the results page -->
+    <!-- Two ways to create widgets in a form: 
+    
+    The first way is creating the tags right here, such as:
+    
+    <label>Bill Amount:</label>
+    <input type="text"> 
+    
+    The second way is to create them in Python:-->
+    {{billform.amount.label}} {{billform.amount}} <!-- Label of the text string box followed by the actual text string box -->
+    <br>  <!-- Break Tag to for a row jump -->
     {{billform.period.label}} {{billform.period}}
-    <hr>
+    <hr> <!-- Adding a Line -->
     <p>First Flatmate</p>
     {{billform.name1.label}} {{billform.name1}}
     <br>
@@ -24,6 +32,7 @@
     {{billform.days_in_house2.label}} {{billform.days_in_house2}}
     <br>
     {{billform.button}}
+
 </form>
 </body>
 </html>
